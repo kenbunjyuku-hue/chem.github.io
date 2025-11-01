@@ -1,0 +1,21 @@
+
+/* 見出し・本文の読みやすさ */
+.post-content h2 { margin-top: 2rem; border-bottom: 1px solid #e5e7eb; padding-bottom: .25rem; }
+.post-content h3 { margin-top: 1.5rem; }
+.post-content p, .post-content li { line-height: 1.85; }
+
+/* 数式の見栄え調整 */
+mjx-container { overflow-x: auto; overflow-y: hidden; }
+mjx-container[display="true"] { margin: 1rem 0; }
+code, pre { font-size: .95rem; }
+
+/* 目次（簡易TOC） */
+.toc {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: .95rem;
+}
+.toc ul { margin: 0; }
+.toc .toc-title { font-weight: 600; margin-bottom: .5rem; }

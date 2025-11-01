@@ -1,0 +1,26 @@
+
+{%- comment -%}
+このファイルは minima の <head> に追加読み込みされます。
+MathJax v3 + mhchem を全ページで有効化します（front matterで math: false にすれば抑制）。
+{%- endcomment -%}
+
+{%- if page.math != false and layout.math != false and site.math != false -%}
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      packages: {'[+]': ['mhchem']}
+    },
+    options: {
+      renderActions: {
+        addMenu: []
+      }
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/input/tex/extensions/mhchem.js"></script>
+{%- endif -%}
+
+<link rel="stylesheet" href="{{ '/assets/css/chem.css' | relative_url }}">

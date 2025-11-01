@@ -1,6 +1,6 @@
 title: Chem Blog
 description: GitHub Pages + Jekyll
-theme: time machine   # 好きな公式テーマ名に変更可
+theme: dinky   # 好きな公式テーマ名に変更可
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

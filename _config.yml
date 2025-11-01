@@ -1,6 +1,47 @@
+
 title: Chem Blog
-description: GitHub Pages + Jekyll
-theme: dinky   # 好きな公式テーマ名に変更可
+description: "GitHub Pages + Jekyll (Chem-ready)"
+theme: minima
+url: ""               # 例: https://username.github.io
+baseurl: ""           # 例: /chem-blog （プロジェクトサイトなら）
+permalink: /:categories/:year/:month/:day/:title/
+timezone: Asia/Tokyo
+
+author:
+  name: "Your Name"
+  email: "you@example.com"
+
+# kramdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# デフォルト front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      toc: true
+      toc_sticky: true
+      tags: []
+      categories: []
+      math: true   # 数式をデフォルトON（MathJax + mhchem）
+
+# Minima 設定
+minima:
+  skin: auto
+  social_links:
+    - platform: github
+      user_url: https://github.com/username

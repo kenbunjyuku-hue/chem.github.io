@@ -2,8 +2,8 @@
 title: Chem Blog
 description: "GitHub Pages + Jekyll (Chem-ready)"
 theme: minima
-url: ""               # 例: https://username.github.io
-baseurl: ""           # 例: /chem-blog （プロジェクトサイトなら）
+url: "https://kenbunjyuku-hue.github.io/chem.github.io/"               # 例: https://username.github.io
+baseurl: "/chem.github.io"           # 例: /chem-blog （プロジェクトサイトなら）
 permalink: /:categories/:year/:month/:day/:title/
 timezone: Asia/Tokyo
 
